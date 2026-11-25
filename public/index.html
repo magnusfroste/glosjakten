@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glosjakten – engelska ord och bilder (åk 4–6)</title>
+<meta name="description" content="Lyssna på och läs engelska ord och peka på rätt bild: sol, måne, äpple, fisk, cykel och tjugo ord till. Nivå 3 är enkla engelska meningar med en lucka. Tränar engelska ord och enkel engelska, åk 4–6. Gratis, ingen inloggning.">
+<meta name="theme-color" content="#faf7f2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:title" content="Glosjakten – engelska ord och bilder">
+<meta property="og:description" content="Hör och läs ett engelskt ord, peka på bilden. Tjugofyra ord i tre nivåer – engelska åk 4–6.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+<script src="https://www.skolappar.com/kotten.js" defer></script>
+</head>
+<body>
+
+<!-- START:startskarm -->
+<div id="startskarm">
+  <div class="sk-inner">
+    <img class="sk-ikon" src="icon-192.png" alt="" width="96" height="96">
+    <h1>Glosjakten</h1>
+    <p class="sk-tagline">Hör och läs ett engelskt ord – peka på bilden.</p>
+    <div class="sk-taggar">
+      <span>Engelska</span><span>Åk 4–6</span><span>Ord &amp; bilder</span>
+    </div>
+    <button class="sk-play" id="spela" aria-label="Spela Glosjakten">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+      Spela
+    </button>
+    <p class="sk-fot">Gratis · ingen inloggning · skolappar.com</p>
+    <details class="sk-laroplan">
+      <summary>Läroplanskoppling (Lgr22)</summary>
+      <p><b>Engelska, åk 4–6, centralt innehåll:</b> ”Ämnesområden som är välbekanta för eleverna.” och ”Tydligt talad engelska och enkla texter som är instruerande, beskrivande och kontaktskapande, från olika medier.”</p>
+      <p>Tjugofyra vanliga engelska ord ur elevens vardag – hemmet, kroppen, maten, djuren och skolan – möter barnet som bild, som skrivet ord och som ord i en enkel engelsk mening. Nivå 1: ordet syns och läses upp på engelska, barnet pekar på bilden. Nivå 2: bilden syns, barnet pekar på rätt engelskt ord bland tre som liknar varandra i stavning (cat – car – cap). Nivå 3: en enkel engelsk mening med en lucka, till exempel ”I drink milk from a ___.”, och barnet pekar på bilden som passar. Efter varje svar sägs och skrivs ordet med sin svenska betydelse. Fel svar kostar inget: Kotten funderar, ordet sägs igen och efter två försök visas rätt bild. Allt som sägs står också skrivet, så appen fungerar med ljudet avstängt. Källa: Skolverket, läroplanen för grundskolan (Lgr22).</p>
+    </details>
+  </div>
+</div>
+<!-- SLUT:startskarm -->
+
+<main id="spel" hidden>
+  <header class="hud">
+    <div class="fraga" id="fraga" aria-live="polite"></div>
+    <div class="hud-hoger">
+      <span class="stjarnor" id="stjarnor" aria-label="stjärnor"></span>
+      <button class="ikon-knapp" id="hjalp" aria-label="Läs upp ordet igen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h3l4-3v12l-4-3H4z"/><path d="M15 8a5 5 0 0 1 0 8"/></svg>
+      </button>
+      <button class="ikon-knapp" id="ljud" aria-label="Ljud på eller av">
+        <svg viewBox="0 0 24 24" aria-hidden="true" id="ljudikon"></svg>
+      </button>
+    </div>
+  </header>
+
+  <section id="brada" aria-label="Svarsalternativ"></section>
+
+  <footer class="svar-rad">
+    <span id="kotten"></span>
+    <span id="svar" aria-live="polite"></span>
+    <span class="prickar" id="prickar" aria-label="frågor klara"></span>
+  </footer>
+</main>
+
+<div id="overlay" hidden>
+  <div class="ov-inner">
+    <div id="ov-bild"></div>
+    <h2 id="ov-titel"></h2>
+    <p id="ov-text"></p>
+    <div class="ov-knappar">
+      <button class="knapp stor" id="ov-nasta"></button>
+      <button class="knapp tyst" id="ov-niva" hidden>Byt nivå</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
