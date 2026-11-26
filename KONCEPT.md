@@ -38,7 +38,7 @@ också i ett klassrum där ljudet är avstängt.
 | Tryckytor | minsta kortets höjd | 314 px (iPad liggande), 223 px (390×844), 80 px (ordkort på 390×844) |
 | Svensk text i barnets nivå | läs igenom frågor och återkoppling | "Peka på bilden", "Inte det ordet…" – inga engelska instruktioner |
 | Återkoppling + nytt försök | två avsiktliga fel | rätt bild lyser, meningen sägs, uppgiften flyttar vidare först efter andra felet, inget går förlorat |
-| Ingen inloggning/reklam/länkar ut | granska HTML | inga konton, inga externa länkar, bara kodsnutten från skolappar.com |
+| Ingen inloggning/reklam/länkar ut | granska HTML | inga konton, inga externa länkar, bara kodsnutten från skolappar.org |
 | Korrekt fakta | alla 24 meningar och ord kontrollerade av `node verify.mjs` (180 000 uppgifter) | 0 fel |
 | Fungerar med ljudet av | ljud av, nivå 3 | frågan står skriven: "A monkey likes to eat a ___." |
 
